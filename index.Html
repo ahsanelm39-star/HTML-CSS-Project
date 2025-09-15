@@ -13,9 +13,9 @@
 </head>
 <body>
     <button class="move-up"><i class="fa-solid fa-angles-up"></i></button>
-    <div class="head">
+    <div id="page" class="head">
         <div class="continer">
-             <ul>
+            <ul>
             <li><a href="">About</a></li>
             <li><a href="">Doctors</a></li>
             <li><a href="">Contact</a></li>
@@ -26,7 +26,6 @@
             <span><i class="fa-solid fa-envelope"></i><a href="mailto:#">email@domain.com</a></span>
         </div>
         </div>
-       
     </div>
 
     <div class="nave">
@@ -39,12 +38,11 @@
                 </i>
                 <div class="links">
                 
-                <ul>
-                    <li ><a class="active" href="index.Html">Home</a></li>
-                    <li><a href="Doctors.Html">Doctors</a></li>
-                    <li><a href="service.Html">Service</a></li>
-                    <li><a href="blogs.Html">Blogs</a></li>
-                    <li><a href="contact.Html">Contact Us</a></li>
+                <ul class="main-links">
+                    <li ><a class="active" href="#page">Home</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#contant">Contact Us</a></li>
                 </ul>
                 
             </div>
@@ -57,8 +55,6 @@
     </div>
 
     <div class="landing">
-        <a href=""><i class="fa-solid fa-reply-all"></i></a>
-        <a href=""><i class="fa-solid fa-reply-all"></i></a>
         <div class="text">
             <h1>We Provide <span>Medical</span> Services That You Can <span>Trust</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium voluptatum tenetur dolores quia Praesentium voluptatum  .</p>
@@ -139,28 +135,28 @@
             <div class="box">
                 <i class="fa-solid fa-house"></i>
                 <div>
-                    <span>3468</span>
+                    <span data-set="3468">0</span>
                     <span>Hospital Rooms</span>
                 </div>
             </div>
             <div class="box">
                 <i class="fa-solid fa-user"></i>
                 <div>
-                    <span>557</span>
+                    <span data-set="557">0</span>
                     <span>Specialist Doctors</span>
                 </div>
             </div>
             <div class="box">
                 <i class="fa-regular fa-face-smile"></i>
                 <div>
-                    <span>4379</span>
+                    <span data-set="4379">0</span>
                     <span>Happy Patients</span>
                 </div>
             </div>
             <div class="box">
                 <i class="fa-solid fa-landmark"></i>
                 <div>
-                    <span>32</span>
+                    <span data-set="32">0</span>
                     <span>Years of Experience</span>
                 </div>
             </div>
@@ -173,11 +169,14 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime qui.</p>
             </div>
 
-            <div class="mainImages">
-                <div><img src="Images/pexels-fr3nks-287227.jpg" alt=""></div>
-                <div><img src="Images/pexels-thirdman-5327584.jpg" alt=""></div>
-                <div><img src="Images/pexels-chokniti-khongchum-1197604-3938023.jpg" alt=""></div>
-                <div><img src="Images/istockphoto-1319031310-1024x1024.jpg" alt=""></div>
+            <div class="continer">
+                <div class="mainImages">
+                    <div><img src="Images/pexels-fr3nks-287227.jpg" alt=""></div>
+                    <div><img src="Images/pexels-thirdman-5327584.jpg" alt=""></div>
+                    <div><img src="Images/pexels-chokniti-khongchum-1197604-3938023.jpg" alt=""></div>
+                    <div><img src="Images/istockphoto-1319031310-1024x1024.jpg" alt=""></div>
+                    <div><img src="Images/blog1 (2).jpg" alt=""></div>
+                </div>
             </div>
 
     </div>
@@ -198,7 +197,7 @@
         </div>
     </div>
 
-    <div class="service">
+    <div id="service" class="service">
         <div class="spicial-head">
             <h2>We Offer Different Services To Improve Your Health</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime qui.</p>
@@ -298,7 +297,7 @@
         </div>
     </div>
 
-    <div class="news">
+    <div id="blogs" class="news">
         <div class="spicial-head">
             <h2>Keep up with Our Most Recent Medical News.</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime qui.</p>
@@ -338,7 +337,7 @@
         </div>
     </div>
 
-    <div class="book-an-Appointment">
+    <div id="contant" class="book-an-Appointment">
         <div class="spicial-head">
             <h2>We Are Always Ready to Help You Book An Appointment .</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime qui.</p>
