@@ -1,21 +1,27 @@
 let mainI=document.querySelector(".nave .continer>i")
-let ul=document.querySelector(".nave .continer  .links ul")
 let links=document.querySelector(".nave .continer  .links ")
-mainI.addEventListener("click",function(){ 
-    ul.style.display="flex"
-    ul.style.flexDirection="column"
+mainI.addEventListener("click",()=>{ 
+    links.classList.toggle("open")
     
 })
 
 
+window.addEventListener("click",(e)=>{
+    if(e.target!==mainI && e.target!==links){
+        if(links.classList.contains("open")){
+            links.classList.remove("open")
+        }   
+    }
+})
+
 let moveUp=document.querySelector(".move-up")
-window.onscroll=function(){
+window.addEventListener("scroll",()=>{
     if(scrollY>250){
         moveUp.style.display="inline-block"
     }else{
         moveUp.style.display="none"
     }
-}
+})
 moveUp.onclick=function(){
     window.scrollTo(0,0)
 }
@@ -35,7 +41,7 @@ const numbersSection = document.querySelector('.data')
 const numbers = document.querySelectorAll('.data .box div span:nth-child(1)')
 let started = false;
 
-window.onscroll= ()=> {
+window.addEventListener("scroll",()=> {
         if(window.scrollY >= numbersSection.offsetTop - 300){
             if(!started){
                 numbers.forEach(num => {
@@ -50,4 +56,4 @@ window.onscroll= ()=> {
             }
         started = true;
     }
-}
+})
