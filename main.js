@@ -1,7 +1,7 @@
 let mainI=document.querySelector(".nave .continer>i")
 let ul=document.querySelector(".nave .continer  .links ul")
 let links=document.querySelector(".nave .continer  .links ")
-mainI.addEventListener("click",function(){
+mainI.addEventListener("click",function(){ 
     ul.style.display="flex"
     ul.style.flexDirection="column"
     
